@@ -3,7 +3,7 @@
 # plugins
 cmd=webstorm
 if uname | grep -q "^MINGW"; then
-  cmd="$HOME"/AppData/Local/JetBrains/Toolbox/scripts/studio.cmd
+  cmd="$HOME"/AppData/Local/JetBrains/Toolbox/scripts/webstorm.cmd
 fi
 
 $cmd installPlugins \
