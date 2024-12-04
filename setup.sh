@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
-# configs
+# config paths
 for config_path in \
+"$HOME"/.config/JetBrains/WebStorm* \
 "$HOME"/Library/Application\ Support/JetBrains/WebStorm* \
 "$HOME"/AppData/Roaming/JetBrains/WebStorm* \
 
