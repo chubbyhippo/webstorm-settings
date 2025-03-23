@@ -14,11 +14,14 @@ do
     mkdir -p "$config_path/keymaps"
     curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/keymaps/chubbyhippo.xml -o "$config_path/keymaps/chubbyhippo.xml"
 
-    # install settings
+    # install options
     mkdir -p "$config_path/options"
     curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/editor.xml -o "$config_path/options/editor.xml"
+    curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/laf.xml -o "$config_path/options/laf.xml"
+    curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/colors.scheme.xml -o "$config_path/options/colors.scheme.xml"
     curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/postfixTemplates.xml -o "$config_path/options/postfixTemplates.xml"
     curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/projectView.xml -o "$config_path/options/projectView.xml"
+    curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/ui.lnf.xml -o "$config_path/options/ui.lnf.xml"
     mkdir -p "$config_path/options/mac"
     curl -k https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/config/options/mac/keymap.xml -o "$config_path/options/mac/keymap.xml"
     mkdir -p "$config_path/options/windows"
