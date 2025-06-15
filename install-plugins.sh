@@ -10,4 +10,5 @@ $cmd installPlugins \
 IdeaVIM \
 com.jetbrains.kmm \
 com.joshestein.ideavim-quickscope \
-eu.theblob42.idea.whichkey
+eu.theblob42.idea.whichkey \
+com.haulmont.rcb
