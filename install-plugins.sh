@@ -8,7 +8,14 @@ fi
 
 $cmd installPlugins \
 	IdeaVIM \
+	StringToolsPlugin \
+	com.fwdekker.randomness \
+	com.github.camork.fileExpander \
+	com.joshestein.ideavim-quickscope \
+	com.julienphalip.ideavim.peekaboo \
 	com.jetbrains.kmm \
 	com.joshestein.ideavim-quickscope \
 	eu.theblob42.idea.whichkey \
-	com.haulmont.rcb
+	indent-rainbow.indent-rainbow \
+	izhangzhihao.rainbow.brackets.lite \
+	org.sonarlint.idea
