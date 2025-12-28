@@ -1,0 +1,8 @@
+= Webstorm-settings
+:raw_webstorm_settings_url: https://raw.githubusercontent.com/chubbyhippo/webstorm-settings/refs/heads/main
+== Setup
+
+[source,shell,subs="attributes"]
+----
+curl -s {raw_webstorm_settings_url}/setup.sh | /usr/bin/env sh
+----
