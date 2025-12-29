@@ -3,9 +3,14 @@
 # plugins
 cmd=webstorm
 if uname | grep -q "^MINGW"; then
-  cmd="$HOME"/AppData/Local/JetBrains/Toolbox/scripts/webstorm.cmd
+  if command -v webstorm.cmd >/dev/null 2>&1; then
+    cmd=webstorm.cmd
+  elif command -v webstorm64 >/dev/null 2>&1; then
+    cmd=webstorm.64
+  else
+    echo "Warning: neither webstorm.cmd nor webstorm64 found, falling back to pycharm"
+  fi
 fi
-
 $cmd installPlugins \
   IdeaVIM \
   StringToolsPlugin \
