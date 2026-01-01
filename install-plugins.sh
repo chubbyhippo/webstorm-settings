@@ -8,7 +8,7 @@ if uname | grep -q "^MINGW"; then
   elif command -v webstorm64 >/dev/null 2>&1; then
     cmd=webstorm.64
   else
-    echo "Warning: neither webstorm.cmd nor webstorm64 found, falling back to pycharm"
+    echo "Warning: neither webstorm.cmd nor webstorm64 found, falling back to webstorm"
   fi
 fi
 $cmd installPlugins \
