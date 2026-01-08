@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 RAW_ITELLIJ_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main"
-RAW_IDEAVIM_URL="https://raw.githubusercontent.com/chubbyhippo/ideavimrc/refs/heads/main"
+RAW_IDEAVIM_URL="https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/ideavim"
 RAW_WEBSTORM_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/webstorm-settings/refs/heads/main"
 
 # config paths
