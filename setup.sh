@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-RAW_ITELLIJ_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main"
+RAW_INTELLIJ_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main"
 RAW_IDEAVIM_URL="https://raw.githubusercontent.com/chubbyhippo/intellij-settings/refs/heads/main/ideavim"
 RAW_WEBSTORM_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/webstorm-settings/refs/heads/main"
 
@@ -13,25 +13,25 @@ for config_path in \
     echo "$config_path"
     # install code styles
     mkdir -p "$config_path/codestyles"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/codestyles/Default.xml" -o "$config_path/codestyles/Default.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/codestyles/Default.xml" -o "$config_path/codestyles/Default.xml"
 
     # install keymaps
     mkdir -p "$config_path/keymaps"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/keymaps/chubbyhippo.xml" -o "$config_path/keymaps/chubbyhippo.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/keymaps/chubbyhippo.xml" -o "$config_path/keymaps/chubbyhippo.xml"
 
     # install options
     mkdir -p "$config_path/options"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/editor.xml" -o "$config_path/options/editor.xml"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/laf.xml" -o "$config_path/options/laf.xml"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/colors.scheme.xml" -o "$config_path/options/colors.scheme.xml"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/postfixTemplates.xml" -o "$config_path/options/postfixTemplates.xml"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/projectView.xml" -o "$config_path/options/projectView.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/editor.xml" -o "$config_path/options/editor.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/laf.xml" -o "$config_path/options/laf.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/colors.scheme.xml" -o "$config_path/options/colors.scheme.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/postfixTemplates.xml" -o "$config_path/options/postfixTemplates.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/projectView.xml" -o "$config_path/options/projectView.xml"
     curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/ui-datetime.xml" -o "$config_path/options/ui-datetime.xml"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/ui.lnf.xml" -o "$config_path/options/ui.lnf.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/ui.lnf.xml" -o "$config_path/options/ui.lnf.xml"
     mkdir -p "$config_path/options/mac"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/mac/keymap.xml" -o "$config_path/options/mac/keymap.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/mac/keymap.xml" -o "$config_path/options/mac/keymap.xml"
     mkdir -p "$config_path/options/windows"
-    curl -ksS "$RAW_ITELLIJ_SETTINGS_URL/config/options/windows/keymap.xml" -o "$config_path/options/windows/keymap.xml"
+    curl -ksS "$RAW_INTELLIJ_SETTINGS_URL/config/options/windows/keymap.xml" -o "$config_path/options/windows/keymap.xml"
   fi
 done
 
